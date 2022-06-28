@@ -1,25 +1,40 @@
-import logo from './logo.svg';
-import './App.css';
+import Directory from "./components/directory/directory";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+const App = () => {
+  const categories = [
+    {
+      id: 1,
+      title: "Classic Comedies",
+      imageUrl:
+        "https://res.cloudinary.com/getoutbcn/image/upload/v1635969328/videolol/nomechilles1_s54g9z.png",
+    },
+    {
+      id: 2,
+      title: "Modern Comedies",
+      imageUrl:
+        "https://res.cloudinary.com/getoutbcn/image/upload/v1635928443/videolol/symbol_ar62cm.png",
+    },
+    {
+      id: 3,
+      title: "Spanish Comedies",
+      imageUrl:
+        "https://res.cloudinary.com/getoutbcn/image/upload/v1635928573/videolol/aquihuele_fuyll3.jpg",
+    },
+    {
+      id: 4,
+      title: "Spoof Movies",
+      imageUrl:
+        "https://res.cloudinary.com/getoutbcn/image/upload/v1635928704/videolol/nakedgun_mondv2.jpg",
+    },
+    {
+      id: 5,
+      title: "Horror Comedies",
+      imageUrl:
+        "https://res.cloudinary.com/getoutbcn/image/upload/v1635928912/videolol/shaun_s34hys.jpg",
+    },
+  ];
+
+  return <Directory categories={categories} />;
+};
 
 export default App;

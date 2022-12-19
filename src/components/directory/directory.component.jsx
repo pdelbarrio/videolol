@@ -28,7 +28,7 @@ const categories = [
     title: "Spoof Movies",
     imageUrl:
       "https://res.cloudinary.com/getoutbcn/image/upload/v1635928704/videolol/nakedgun_mondv2.jpg",
-    route: "shop/spoof%20movies",
+    route: "shop/spoof-movies",
   },
   {
     id: 5,

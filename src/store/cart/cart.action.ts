@@ -2,8 +2,7 @@ import { CategoryItem } from "../categories/category.types";
 import { CART_ACTION_TYPES, CartItem } from "./cart.types";
 import {
   createAction,
-  withMatcher,
-  Action,
+  withMatcher, 
   ActionWithPayload,
 } from "../../utils/reducer/reducer.utils";
 

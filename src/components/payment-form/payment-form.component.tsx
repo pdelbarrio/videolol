@@ -6,7 +6,7 @@ import { selectCartTotal } from "../../store/cart/cart.selector";
 import { selectCurrentUser } from "../../store/user/user.selector";
 import { BUTTON_TYPE_CLASSES } from "../button/button.component";
 import {
-  FormContainter,
+  FormContainer,
   PaymentButton,
   PaymentFormContainer,
   TextContainer,
@@ -70,7 +70,7 @@ const PaymentForm = () => {
 
   return (
     <PaymentFormContainer>
-      <FormContainter onSubmit={paymentHandler}>
+      <FormContainer onSubmit={paymentHandler}>
         <h2>Credit Card Payment:</h2>
         <TextContainer>
           (You can use the credit card with nº 4242 4242 4242 4242 for testing
@@ -87,7 +87,7 @@ const PaymentForm = () => {
         >
           Pay Now
         </PaymentButton>
-      </FormContainter>
+      </FormContainer>
     </PaymentFormContainer>
   );
 };

@@ -8,6 +8,9 @@ export const PaymentFormContainer = styled.div`
   align-items: center;
   justify-content: center;
   padding-bottom: 50px;
+  @media screen and (max-width: 800px) {
+    margin: 0 20px 0 20px;
+  }
 `;
 
 export const FormContainer = styled.form`
@@ -22,4 +25,15 @@ export const PaymentButton = styled(Button)`
 
 export const TextContainer = styled.p`
   line-height: 10px;
+
+  /* margin-top: 40px; */
+  font-size: 24px;
+  color: red;
+  /* padding-bottom: 40px; */
+
+  @media screen and (max-width: 800px) {
+    padding-bottom: 40px;
+    /* width: 300px; */
+    margin-top: 40px;
+  }
 `;

@@ -1,4 +1,3 @@
-import { memo } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { selectCartItems } from "../../store/cart/cart.selector";
 import {

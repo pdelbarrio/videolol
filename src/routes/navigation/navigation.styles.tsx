@@ -26,6 +26,7 @@ export const LogoContainer = styled(Link)`
 
 export const Logo = styled.img`
   width: 120px;
+
   @media screen and (max-width: 800px) {
     width: 80px;
   }

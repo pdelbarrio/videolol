@@ -20,17 +20,27 @@ export const Body = styled.div`
   opacity: 0.7;
   position: absolute;
 
+  @media screen and (max-width: 800px) {
+    width: 100px;
+  }
+
   h2 {
     font-weight: bold;
     margin: 0 6px 0;
     font-size: 22px;
     color: #4a4a4a;
     text-transform: uppercase;
+    @media screen and (max-width: 800px) {
+      font-size: 15px;
+    }
   }
 
   p {
     font-weight: lighter;
     font-size: 16px;
+    @media screen and (max-width: 800px) {
+      font-size: 10px;
+    }
   }
 `;
 
@@ -64,5 +74,16 @@ export const DirectoryItemContainer = styled.div`
     ${Body} {
       opacity: 0.9;
     }
+  }
+  &:first-child {
+    margin-right: 7.5px;
+  }
+
+  &:last-child {
+    margin-left: 7.5px;
+  }
+
+  @media screen and (max-width: 800px) {
+    height: 200px;
   }
 `;

@@ -74,11 +74,8 @@ const PaymentForm = () => {
         <h2>Credit Card Payment:</h2>
         <TextContainer>
           (You can use the credit card with nº 4242 4242 4242 4242 for testing
-          purposes
-        </TextContainer>
-        <TextContainer>
-          with any future expiration date and random numbers for the rest of
-          other fields){" "}
+          purposes with any future expiration date and random numbers for the
+          rest of other fields){" "}
         </TextContainer>
         <CardElement />
         <PaymentButton

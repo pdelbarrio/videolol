@@ -30,4 +30,10 @@ export const Preview = styled.div`
     grid-template-columns: 1fr 1fr;
     grid-gap: 15px;
   }
+
+  @media screen and (max-width: 400px) {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-row-gap: 25px;
+  }
 `;

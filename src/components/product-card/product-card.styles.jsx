@@ -42,7 +42,7 @@ export const ProductCartContainer = styled.div`
   }
 
   @media screen and (max-width: 800px) {
-    /* width: 40vw; */
+    width: 40vw;
 
     &:hover {
       img {
@@ -53,6 +53,10 @@ export const ProductCartContainer = styled.div`
         opacity: unset;
       }
     }
+  }
+
+  @media screen and (max-width: 400px) {
+    width: 80vw;
   }
 `;
 

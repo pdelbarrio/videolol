@@ -9,7 +9,11 @@ import {
   selectCategoriesMap,
 } from "../../store/categories/category.selector";
 
-import { CategoryContainer, Title } from "./category.styles";
+import {
+  CategoryContainer,
+  CategoryMainContainer,
+  Title,
+} from "./category.styles";
 
 type CategoryRouteParams = {
   category: string;
@@ -28,7 +32,7 @@ const Category = () => {
   }, [category, categoriesMap]);
 
   return (
-    <Fragment>
+    <CategoryMainContainer>
       <Title>{category.toUpperCase()}</Title>
       {isLoading ? (
         <Spinner />
@@ -40,7 +44,7 @@ const Category = () => {
             ))}
         </CategoryContainer>
       )}
-    </Fragment>
+    </CategoryMainContainer>
   );
 };
 

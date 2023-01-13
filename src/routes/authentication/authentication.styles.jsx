@@ -8,7 +8,7 @@ export const AuthenticationContainer = styled.div`
 
   @media screen and (max-width: 800px) {
     flex-direction: column;
-    width: unset;
+    width: 250px;
     align-items: center;
 
     > *:first-child {
